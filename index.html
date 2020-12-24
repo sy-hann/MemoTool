@@ -9,17 +9,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Shopping List</h1>
-    </div>
-    <div class="container">
-        <ul>
-            <li><i class="fas fa-trash-alt"></i></li>
+    <section class="list">
+        <header class="header">Shopping List</header>
+        <ul class="items">
+            <li class="item__row">
+                <div class="item">
+                    <span class="item__name">Egg</span>
+                    <button class="item__delete">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+            </li>
         </ul>
-        <input name="abc" type="text" value="" />
-    </div>
-    <div class="footer">
-        <div class="plusBtn"><i class="fas fa-plus"></i></div>
-    </div>
+        <footer class="footer">
+            <input type="text" class="footer__input">
+            <button class="footer__btn">
+                <i class="fas fa-plus"></i>
+            </button>
+        </footer>
+    </section>    
 </body>
 </html>
